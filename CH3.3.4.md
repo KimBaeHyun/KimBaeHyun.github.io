@@ -518,7 +518,7 @@ GET index/_search
 
 분석기를 매핑할 때 기본적으로 "analyzer"라는 항목을 이용해 설정하게 되는데, 이는 색인 시점과 검색 시점에 모두 동일한 분석기를 사용한다는 의미다. 만약 각 시점에 서로 다른 분석기를 사용하려면 "search_analyzer" 항목을 이용해 검색 시점의 분석기를 재정의해야 한다.
 
-대개 Index Analyzer와 Search Analyzer는 같은 분석기를 사용한다. 그러나 위 예제처럼 autocomplete 기능을 위해 edge_ngram tokenizer를 사용하는 경우 검색시 다른 분석기를 사용하는 것이 합리적이다.
+대개 Index Analyzer와 Search Analyzer는 같은 분석기를 사용한다. 그러나 위 예제처럼 autocomplete 기능을 위해 edge_ngram tokenizer를 사용하는 경우 검색시 다른 분석기를 사용하는 것이 합리적이다.
 
 PUT mapping API(PUT /<index>/_mapping)를 이용하여 기존 필드의 search_analyzer 설정 업데이트가 가능하다.
 
